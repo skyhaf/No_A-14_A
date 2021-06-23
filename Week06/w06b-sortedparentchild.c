@@ -14,7 +14,7 @@ void main(void) {
     rPID=getpid()-id1000+offset;
     rPPID=getppid()-id1000+offset;
     if (rPPID < 1000 || rPPID > rPID) rPPID=999;
-    printf("PARENT PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+    printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
 	
 	
   }else{//1001
@@ -26,7 +26,7 @@ void main(void) {
       sleep(1);
       rPID=getpid()-id1000+offset;
       rPPID=getppid()-id1000+offset;
-      printf("C1 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+      printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
 	  
 	 } else {//1003
 	 
@@ -37,7 +37,7 @@ void main(void) {
 	    sleep(3);
 	    rPID=getpid()-id1000+offset;
         rPPID=getppid()-id1000+offset;
-        printf("C3 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+        printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
 		
 	   }else{//1005
 	   
@@ -49,7 +49,7 @@ void main(void) {
 		 sleep(3);
 	     rPID=getpid()-id1000+offset;
          rPPID=getppid()-id1000+offset;
-         printf("C5 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+         printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
 			
 		}else{//1007
 			
@@ -61,7 +61,7 @@ void main(void) {
 		   sleep(1);
 	       rPID=getpid()-id1000+offset;
            rPPID=getppid()-id1000+offset;
-           printf("C7 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+           printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
 			  
 		  }else{//1009
 			  
@@ -70,12 +70,12 @@ void main(void) {
 			sleep(1);
 	        rPID=getpid()-id1000+offset;
             rPPID=getppid()-id1000+offset;
-            printf("C9 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+            printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
 			   
 		   }else{//1010
 	        rPID=getpid()-id1000+offset;
             rPPID=getppid()-id1000+offset;
-            printf("C10 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+            printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
 			   
 		   }
 			  
@@ -85,7 +85,7 @@ void main(void) {
 		  sleep(2);
 	      rPID=getpid()-id1000+offset;
           rPPID=getppid()-id1000+offset;
-          printf("C8 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+          printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
 			 
 		 }
 			
@@ -95,7 +95,7 @@ void main(void) {
 		 sleep(3);
 	     rPID=getpid()-id1000+offset;
          rPPID=getppid()-id1000+offset;
-         printf("C6 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+         printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
 			
 		}
 		
@@ -105,7 +105,7 @@ void main(void) {
 	   sleep(6);
 	   rPID=getpid()-id1000+offset;
        rPPID=getppid()-id1000+offset;
-       printf("C4 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+       printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
 	  }
 
 	 }
@@ -113,7 +113,7 @@ void main(void) {
 	 sleep(9);
      rPID=getpid()-id1000+offset;
      rPPID=getppid()-id1000+offset;
-     printf("C2 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+     printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
 	}
   }
 }
