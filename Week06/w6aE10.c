@@ -10,7 +10,7 @@ void main(void) {
   rPID=getpid()-id1000+offset;
   rPPID=getppid()-id1000+offset;
   if (rPPID < 1000 || rPPID > rPID) rPPID=999;
-  printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+  printf("A 1000 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
   fflush(NULL);
 
   temp=fork();
@@ -21,18 +21,18 @@ void main(void) {
     if(temp3==0){
       rPID=getpid()-id1000+offset;
       rPPID=getppid()-id1000+offset;
-      printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+      printf("B 1003 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
     } else {
       temp4=fork();
       wait(NULL);
       if(temp4==0){
         rPID=getpid()-id1000+offset;
         rPPID=getppid()-id1000+offset;
-        printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+        printf("C 1004 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
       } else {
         rPID=getpid()-id1000+offset;
         rPPID=getppid()-id1000+offset;
-        printf("PID[%d] \t PPID[%4d]\n", rPID, 1000);
+        printf("D 1001 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
       }
     }
   }
@@ -46,18 +46,18 @@ void main(void) {
       if(temp5==0){
         rPID=getpid()-id1000+offset;
         rPPID=getppid()-id1000+offset;
-        printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+        printf("E 1005 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
       } else {
         temp6=fork();
         wait(NULL);
         if(temp6==0){
           rPID=getpid()-id1000+offset;
           rPPID=getppid()-id1000+offset;
-          printf("PID[%d] \t PPID[%4d]\n", rPID, rPPID);
+          printf("F 1006 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
         } else {
           rPID=getpid()-id1000+offset;
           rPPID=getppid()-id1000+offset;
-          printf("PID[%d] \t PPID[%4d]\n", rPID, 1000);
+          printf("G 1002 PID[%d] \t PPID[%4d]\n", rPID, rPPID);
         }
       }
     }
