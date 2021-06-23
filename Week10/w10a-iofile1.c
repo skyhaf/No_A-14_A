@@ -11,9 +11,15 @@
 
 
 void main(void) {
-   int n, off, ofd;
+   // int n, off, ofd;
 
-   printf("Please see file %s\n", OFILE);
+   FILE *fp;
+   fp = open("output11.txt", 99,"w");
+
+   fprintf(fp, "%s", "testing");
+   fclose(fp);
+
+   // printf("Please see file %s\n", OFILE);
 
 
 }
