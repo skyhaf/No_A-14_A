@@ -8,3 +8,4 @@ Jangan lupa file pakta terakhir
 Kelompok A-14
 - Hafiz Bhadrika Alamsyah
 - Muhamad Akbar Syahputra Adha
+- Halim Susilo
